@@ -18,7 +18,7 @@ public static void main(String[] args) {
     int i = 0;
 
     while (!isInvited && i < invitedGuests.length) {
-        if (userName.equals(invitedGuests[i])) {
+        if (userName.toLowerCase().replaceAll("\\s","").equals(invitedGuests[i].toLowerCase().replaceAll("\\s",""))) {
             // * Se presente uscire dal ciclo
             isInvited = true;
         }

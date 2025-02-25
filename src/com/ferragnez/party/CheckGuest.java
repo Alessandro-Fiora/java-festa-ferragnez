@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CheckGuest {
 public static void main(String[] args) {
-    
+
     // ^ Creare array nomi invitati
     String[] invitedGuests = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
 
@@ -17,7 +17,7 @@ public static void main(String[] args) {
     boolean isInvited = false;
 
     for(int i = 0; i<invitedGuests.length; i++) {
-            if (userName.equals(invitedGuests[i])) {
+            if (userName.toLowerCase().replaceAll("\\s","").equals(invitedGuests[i].toLowerCase().replaceAll("\\s",""))) {
 
                 // * Se presente uscire dal ciclo
                 isInvited = true;
