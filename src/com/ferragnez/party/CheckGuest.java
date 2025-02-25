@@ -9,6 +9,7 @@ public static void main(String[] args) {
     String[] invitedGuests = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
 
     // ? Chiedere nome utente
+    System.out.println("Inserisci il tuo nome:");
     Scanner scanner = new Scanner(System.in);
     String userName = scanner.nextLine();
     scanner.close();
